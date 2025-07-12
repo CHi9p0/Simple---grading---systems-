@@ -1,0 +1,104 @@
+Here’s your COS assignment with both the pseudocode and the Python code for a simple grading system.
+
+
+---
+
+✅ Pseudocode for Grading System
+
+START
+  DISPLAY "Enter your score (0 - 100):"
+  INPUT score
+
+  IF score >= 70 AND score <= 100 THEN
+      grade = 'A'
+  ELSE IF score >= 60 AND score <= 69 THEN
+      grade = 'B'
+  ELSE IF score >= 50 AND score <= 59 THEN
+      grade = 'C'
+  ELSE IF score >= 45 AND score <= 49 THEN
+      grade = 'D'
+  ELSE IF score >= 40 AND score <= 44 THEN
+      grade = 'E'
+  ELSE IF score < 40 AND score >= 0 THEN
+      grade = 'F'
+  ELSE
+      DISPLAY "Invalid score"
+      STOP
+
+  DISPLAY "Your grade is: ", grade
+END
+
+
+---
+
+✅ Python Code for Grading System
+
+def get_grade(score):
+    if 70 <= score <= 100:
+        return 'A'
+    elif 60 <= score <= 69:
+        return 'B'
+    elif 50 <= score <= 59:
+        return 'C'
+    elif 45 <= score <= 49:
+        return 'D'
+    elif 40 <= score <= 44:
+        return 'E'
+    elif 0 <= score < 40:
+        return 'F'
+    else:
+        return 'Invalid score'
+
+try:
+    score_input = int(input("Enter your score (0 - 100): "))
+    grade = get_grade(score_input)
+    print("Your grade is:", grade)
+except ValueError:
+    print("Please enter a valid number.")
+
+
+---
+
+⬆️ Uploading to GitHub
+
+You can follow these steps to upload:
+
+Step 1: Prepare Files
+
+Create two files:
+
+grading_pseudocode.txt → Copy the pseudocode into this file.
+
+grading_system.py → Copy the Python code into this file.
+
+
+
+Step 2: Upload to GitHub
+
+1. Go to GitHub
+
+
+2. Sign in → Click the "+" at top-right → New repository
+
+
+3. Name your repo e.g. simple-grading-system
+
+
+4. Choose Public or Private → Click Create repository
+
+
+5. Click "Upload files" button
+
+
+6. Drag or choose grading_pseudocode.txt and grading_system.py
+
+
+7. Click Commit changes
+
+
+
+
+---
+
+Let me know if you'd like me to generate the GitHub repository and share the link with you.
+
